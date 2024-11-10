@@ -1,18 +1,18 @@
 // Login.js
-import React, { useState } from 'react';
-import authService from '../services/authService';
+import React, { useState } from "react";
+import authService from "../services/authService";
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await authService.login(username, password);
-      window.location.href = '/'; // Redirect to the home page after login
+      window.location.href = "/"; // Redirect to the home page after login
     } catch (error) {
-      console.error('Login failed:', error);
+      console.error("Login failed:", error);
     }
   };
 

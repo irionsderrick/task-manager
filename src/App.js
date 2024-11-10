@@ -7,24 +7,23 @@ import TaskForm from "./components/TaskFrom";
 import Login from "./components/Login";
 import Register from "./components/Register";
 
-
 function App() {
   return (
-  <>
-  <h1>Task Manager</h1>
-  <Router>
-<NavBar />
-<div className="container mt-4">
-  <Routes>
-    <Route path= "/" element={<TaskList /> } />
-    <Route path= "/create" element={<TaskForm /> } />
-    <Route path = "/task/:id" element={<TaskDetail />} />
-    <Route path="/login" element={<Login />} />
-    <Route path="/register" element={<Register />} />
-  </Routes>
-</div>
-  </Router>
-  </>
+    <>
+      <h1>Task Manager</h1>
+      <Router>
+        <NavBar />
+        <div className="container mt-4">
+          <Routes>
+            <Route path="/" element={<TaskList />} />
+            <Route path="/create" element={<TaskForm />} />
+            <Route path="/task/:id" element={<TaskDetail />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
 
