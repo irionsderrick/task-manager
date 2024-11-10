@@ -1,6 +1,5 @@
-// TaskList.js
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
@@ -10,7 +9,7 @@ const TaskList = () => {
   }, []);
 
   const fetchTasks = async () => {
-    const response = await axios.get('/api/tasks');
+    const response = await axios.get("/api/tasks");
     setTasks(response.data);
   };
 

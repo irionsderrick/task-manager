@@ -1,4 +1,3 @@
-// TaskDetail.js
 import React from "react";
 
 const TaskDetail = ({ task }) => {
