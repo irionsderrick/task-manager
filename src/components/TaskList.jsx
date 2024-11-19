@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { fetchTasks } from "./service";
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetchTasks();
+    fetchTasks()
+      .then((data) => {
+        setTasks(data);
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching tasks", error);
+      });
   }, []);
-
-  const fetchTasks = async () => {
-    const response = await axios.get("/api/tasks");
-    setTasks(response.data);
-  };
 
   return (
     <div>

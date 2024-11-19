@@ -1,7 +1,7 @@
 // Register.js
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
-import authService from "../services/authService";
+import userService from "../services/userService";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -17,7 +17,7 @@ const Register = () => {
       return;
     }
     try {
-      await authService.register(username, password);
+      await userService.register(username, password);
       setSuccess(true);
       setError(null);
       setUsername("");

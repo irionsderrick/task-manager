@@ -1,7 +1,7 @@
 // Login.js
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
-import authService from "../services/authService";
+import userService from "../services/userService";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await authService.login(username, password);
+      await userService.login(username, password);
       window.location.href = "/"; // Redirect to the home page after login
     } catch (error) {
       setError("Login failed. Please check your username and password.");

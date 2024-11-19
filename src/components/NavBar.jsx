@@ -59,29 +59,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const NavBar = () => {
-//   return (
-//     <nav>
-//       <ul>
-//         <li>
-//           <Link to="/tasklist">Task List</Link>
-//         </li>
-//         <li>
-//           <Link to="/create">Create Task</Link>
-//         </li>
-//         <li>
-//           <Link to="/register">Register</Link>
-//         </li>
-//         <li>
-//           <Link to="/login">Login</Link>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
-// };
-
-// export default NavBar;
