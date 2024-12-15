@@ -1,19 +1,14 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Task_Manager_API.Models;
 
-namespace Task_Manager_API.Web_Api.Controllers
+namespace Task_Manager_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TasksController : ControllerBase
+    public class TasksController(TaskDbContext taskContext) : ControllerBase
     {
-        private readonly TaskContext _taskContext;
-        public TasksController(TaskContext taskContext)
-        {
-            _taskContext = taskContext;
-        }
+        private readonly TaskDbContext _taskContext = taskContext;
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Models.Task>>> GetTasks()

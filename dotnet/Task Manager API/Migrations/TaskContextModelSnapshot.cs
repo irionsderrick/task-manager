@@ -3,13 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Task_Manager_API.Models;
 
 #nullable disable
 
 namespace Task_Manager_API.Migrations
 {
-    [DbContext(typeof(TaskContext))]
+    [DbContext(typeof(TaskDbContext))]
     partial class TaskContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

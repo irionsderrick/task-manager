@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "Task_Manager_API.Web_Api.Controllers.TasksController",
+    "ContainingType": "Task_Manager_API.Controllers.TasksController",
     "Method": "GetTasks",
     "RelativePath": "api/Tasks",
     "HttpMethod": "GET",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "ContainingType": "Task_Manager_API.Web_Api.Controllers.TasksController",
+    "ContainingType": "Task_Manager_API.Controllers.TasksController",
     "Method": "CreateTask",
     "RelativePath": "api/Tasks",
     "HttpMethod": "POST",
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "ContainingType": "Task_Manager_API.Web_Api.Controllers.TasksController",
+    "ContainingType": "Task_Manager_API.Controllers.TasksController",
     "Method": "GetTaskById",
     "RelativePath": "api/Tasks/{id}",
     "HttpMethod": "GET",
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "ContainingType": "Task_Manager_API.Web_Api.Controllers.TasksController",
+    "ContainingType": "Task_Manager_API.Controllers.TasksController",
     "Method": "UpdateTask",
     "RelativePath": "api/Tasks/{id}",
     "HttpMethod": "PUT",
@@ -93,7 +93,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Task_Manager_API.Web_Api.Controllers.TasksController",
+    "ContainingType": "Task_Manager_API.Controllers.TasksController",
     "Method": "DeleteTask",
     "RelativePath": "api/Tasks/{id}",
     "HttpMethod": "DELETE",
@@ -107,26 +107,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Task_Manager_API.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Task_Manager_API.WeatherForecast, Task Manager API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]

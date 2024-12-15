@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Task Manager API",
-    "\\Task Manager API\\Web Api",
-    "\\Task Manager API\\Web Api\\Controllers"
+    "\\Task Manager API\\Models"
   ],
-  "SelectedNode": "\\Task Manager API\\Web Api\\Controllers\\TasksController.cs",
+  "SelectedNode": "\\api.sln",
   "PreviewInSolutionExplorer": false
 }

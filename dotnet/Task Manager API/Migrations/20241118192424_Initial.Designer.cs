@@ -4,13 +4,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Task_Manager_API.Models;
 
 #nullable disable
 
 namespace Task_Manager_API.Migrations
 {
-    [DbContext(typeof(TaskContext))]
+    [DbContext(typeof(TaskDbContext))]
     [Migration("20241118192424_Initial")]
     partial class Initial
     {

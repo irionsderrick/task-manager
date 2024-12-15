@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\SWE Projects\\Task Manager\\dotnet\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|c:\\swe projects\\task manager\\dotnet\\task manager api\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|c:\\swe projects\\task manager\\dotnet\\task manager api\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,15 +30,33 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "Task Manager API\\Models\\Task.cs",
+              "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Models\\Task.cs",
+              "RelativeToolTip": "Task Manager API\\Models\\Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T03:45:29.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Task Manager API\\Controllers\\TasksController.cs",
+              "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Task Manager API\\Controllers\\TasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T02:48:45.173Z",
+              "EditorCaption": ""
             }
           ]
         }

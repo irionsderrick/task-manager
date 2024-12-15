@@ -1,19 +1,31 @@
 import React, { useEffect, useState } from "react";
-import { fetchTasks } from "./service";
+import fetchTasks from "../services/taskService";
+import taskService from "../services/taskService";
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    fetchTasks()
-      .then((data) => {
-        setTasks(data);
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching tasks", error);
-      });
+    const fetchTasks = async () => {
+      try {
+        const response = await taskService.fetchTasks();
+        setTasks(response.data);
+      } catch (error) {
+        console.error("Error fetching tasks:", error);
+      }
+    };
+
+    fetchTasks();
   }, []);
+  // fetchTasks()
+  //   .then((data) => {
+  //     setTasks(data);
+  //     console.log(data);
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error fetching tasks", error);
+  //   });
+  // }, []);
 
   return (
     <div>

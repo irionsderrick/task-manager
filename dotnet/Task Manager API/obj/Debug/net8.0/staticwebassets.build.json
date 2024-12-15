@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "94/RhnC5/u5bzkacQK/Lo9SdXy65oGm9alzrkuOgVuE=",
+  "Hash": "7gqo0F8wOuY3TaXDsWc3X5dYN8wqK3E5qkjCf2OVOBI=",
   "Source": "Task Manager API",
   "BasePath": "_content/Task Manager API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
