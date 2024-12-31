@@ -7,6 +7,8 @@ import TaskDetail from "./components/TaskDetail";
 import TaskForm from "./components/TaskForm";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import TaskManager from "./components/TaskManager";
+import TempRegister from "./components/TempRegister";
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tasks" element={<TaskList />} />
           <Route path="/create" element={<TaskForm />} />
+          <Route path="/taskmanager" element={<TaskManager />} />
           <Route path="/task/:id" element={<TaskDetail />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/tempregister" element={<TempRegister />} />
         </Routes>
       </div>
     </>

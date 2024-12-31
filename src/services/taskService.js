@@ -4,10 +4,15 @@ const taskService = {
   endpoint: "https://localhost:44372/api/tasks",
 };
 
+const token = localStorage.getItem("token");
+
 const fetchTasks = async () => {
   try {
     const response = await axios.get(taskService.endpoint, {
       withCredentials: true,
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
     });
     console.log(response);
     return response;
@@ -43,24 +48,27 @@ const fetchTasks = async () => {
 //   }
 // };
 
-// const createProduct = async (payload) => {
-//   const config = {
-//     method: "POST",
-//     url: `${productService.endpoint}`,
-//     data: payload,
-//     withCredentials: true,
-//     crossdomain: true,
-//     headers: { "Content-Type": "application/json" },
-//   };
-//   try {
-//     console.log("This is the axios Create productData", payload);
-//     const newProduct = await axios(config);
-//     console.log("This is newProduct", newProduct);
-//     return newProduct;
-//   } catch (error) {
-//     console.error("Error creating product:", error);
-//   }
-// };
+const createTask = async (payload) => {
+  const config = {
+    method: "POST",
+    url: `${taskService.endpoint}`,
+    data: payload,
+    withCredentials: true,
+    crossdomain: true,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  };
+  try {
+    console.log("This is the create task payload", payload);
+    const newTask = await axios(config);
+    console.log("This is newTask", newTask);
+    return newTask;
+  } catch (error) {
+    console.error("Creating new task failed:", error);
+  }
+};
 
 // const updateProduct = async (id, payload) => {
 //   const config = {
@@ -99,4 +107,5 @@ const fetchTasks = async () => {
 
 export default {
   fetchTasks,
+  createTask,
 };

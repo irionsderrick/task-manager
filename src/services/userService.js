@@ -1,28 +1,48 @@
 import axios from "axios";
 
-const API_URL = "https://localhost:3000/api/users";
-
-const register = (username, password) => {
-  return axios.post(`${API_URL}/register`, { username, password });
+const userService = {
+  endpoint: "https://localhost:44372/api/Auth",
 };
 
-const login = (username, password) => {
-  return axios
-    .post(`${API_URL}/login`, { username, password })
-    .then((response) => {
-      if (response.data.token) {
-        localStorage.setItem("user", JSON.stringify(response.data));
-      }
-      return response.data;
-    });
+const register = async (email, passwordHash) => {
+  const config = {
+    method: "POST",
+    url: `${userService.endpoint}/register`,
+    data: { email, passwordHash },
+    withCredentials: true,
+    crossdomain: true,
+    headers: { "Content-Type": "application/json" },
+  };
+  try {
+    console.log("This is the register config:", config);
+    const newUser = await axios(config);
+    console.log("User registered successfully", newUser);
+    return newUser;
+  } catch (error) {
+    console.error("Register failed", error);
+  }
 };
 
-const logout = () => {
-  localStorage.removeItem("user");
+const login = async (payload) => {
+  const config = {
+    method: "POST",
+    url: `${userService.endpoint}/login`,
+    data: payload,
+    withCredentials: true,
+    crossdomain: true,
+    headers: { "Content-Type": "application/json" },
+  };
+  try {
+    console.log("This is the login payload:", payload);
+    const newUser = await axios(config);
+    console.log("User logged in successfully", newUser);
+    return newUser;
+  } catch (error) {
+    console.error("Login failed", error);
+  }
 };
 
 export default {
   register,
   login,
-  logout,
 };

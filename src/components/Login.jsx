@@ -1,20 +1,23 @@
 // Login.js
 import React, { useState } from "react";
-import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import userService from "../services/userService";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await userService.login(username, password);
+      const response = await userService.login(email, password);
+      localStorage.setItem("token", response.data.token);
       window.location.href = "/"; // Redirect to the home page after login
     } catch (error) {
-      setError("Login failed. Please check your username and password.");
+      console.error(
+        "Login failed. Please check your email and password.",
+        error
+      );
     }
   };
 
@@ -23,15 +26,15 @@ const Login = () => {
       <Row className="justify-content-md-center">
         <Col xs={12} md={6}>
           <h2>Login</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
+          {/* {error && <Alert variant="danger">{error}</Alert>} */}
           <Form onSubmit={handleLogin}>
-            <Form.Group controlId="formUsername">
-              <Form.Label>Username</Form.Label>
+            <Form.Group controlId="formemail">
+              <Form.Label>email</Form.Label>
               <Form.Control
                 type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Enter your username"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
                 required
               />
             </Form.Group>
@@ -58,3 +61,38 @@ const Login = () => {
 };
 
 export default Login;
+
+// import React, { useState } from 'react';
+// import axios from 'axios';
+
+// function Login() {
+//     const [email, setEmail] = useState('');
+//     const [password, setPassword] = useState('');
+
+//     const handleLogin = async (e) => {
+//         e.preventDefault();
+//         try {
+//             const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+//             localStorage.setItem('token', response.data.token);
+//             // Redirect to task manager page
+//         } catch (error) {
+//             console.error('Login failed', error);
+//         }
+//     };
+
+//     return (
+//         <form onSubmit={handleLogin}>
+//             <div>
+//                 <label>Email:</label>
+//                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+//             </div>
+//             <div>
+//                 <label>Password:</label>
+//                 <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+//             </div>
+//             <button type="submit">Login</button>
+//         </form>
+//     );
+// }
+
+// export default Login;

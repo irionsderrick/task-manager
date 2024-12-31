@@ -16,6 +16,11 @@ const NavBar = () => {
     console.log("Search submitted");
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    window.location.href = "/login"; //redirect to Login page
+  };
+
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
@@ -25,9 +30,6 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            {/* <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link> */}
             <Nav.Link as={Link} to="/tasks">
               Task List
             </Nav.Link>
@@ -37,6 +39,7 @@ const NavBar = () => {
             <Nav.Link as={Link} to="/login">
               Login
             </Nav.Link>
+            <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
             <Nav.Link as={Link} to="/register">
               Register
             </Nav.Link>

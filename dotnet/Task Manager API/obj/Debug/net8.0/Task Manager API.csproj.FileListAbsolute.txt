@@ -257,4 +257,6 @@ C:\SWE Projects\Task Manager\dotnet\Task Manager API\bin\Debug\net8.0\zh-Hant\Mi
 C:\SWE Projects\Task Manager\dotnet\Task Manager API\bin\Debug\net8.0\Task Manager API.staticwebassets.endpoints.json
 C:\SWE Projects\Task Manager\dotnet\Task Manager API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\SWE Projects\Task Manager\dotnet\Task Manager API\obj\Debug\net8.0\staticwebassets\msbuild.Task Manager API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\SWE Projects\Task Manager\dotnet\Task Manager API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\SWE Projects\Task Manager\dotnet\Task Manager API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\SWE Projects\Task Manager\dotnet\Task Manager API\bin\Debug\net8.0\BCrypt.Net-Core.dll

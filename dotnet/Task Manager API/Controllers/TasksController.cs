@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Task_Manager_API.Models;
 
@@ -6,9 +7,10 @@ namespace Task_Manager_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TasksController(TaskDbContext taskContext) : ControllerBase
+    [Authorize]
+    public class TasksController(ApplicationDbContext taskContext) : ControllerBase
     {
-        private readonly TaskDbContext _taskContext = taskContext;
+        private readonly ApplicationDbContext _taskContext = taskContext;
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Models.Task>>> GetTasks()
@@ -17,7 +19,7 @@ namespace Task_Manager_API.Controllers
             {
                 return NotFound();
             }
-            return await _taskContext.Tasks.ToListAsync();
+            return await _taskContext.Tasks.ToListAsync();  
         }
 
         [HttpGet("{id}")]

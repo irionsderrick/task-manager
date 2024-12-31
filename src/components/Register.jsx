@@ -1,30 +1,28 @@
 // Register.js
 import React, { useState } from "react";
-import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import userService from "../services/userService";
 
 const Register = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const [passwordHash, setPasswordHash] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [error, setError] = useState(null);
-  const [success, setSuccess] = useState(false);
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    if (password !== confirmPassword) {
-      setError("Passwords do not match");
+    if (passwordHash !== confirmPassword) {
+      alert("Passwords do not match");
       return;
     }
     try {
-      await userService.register(username, password);
-      setSuccess(true);
-      setError(null);
-      setUsername("");
-      setPassword("");
-      setConfirmPassword("");
+      const response = await userService.register(email, passwordHash);
+      console.log("....................", email, passwordHash);
+      // window.location.href = "/login"; // Redirect to the login page after register
     } catch (error) {
-      setError("Registration failed. Please try again.");
+      console.error(
+        "Login failed. Please check your email and password.",
+        error
+      );
     }
   };
 
@@ -33,20 +31,20 @@ const Register = () => {
       <Row className="justify-content-md-center">
         <Col xs={12} md={6}>
           <h2>Register</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
+          {/* {error && <Alert variant="danger">{error}</Alert>}
           {success && (
             <Alert variant="success">
               Registration successful! You can now log in.
             </Alert>
-          )}
+          )} */}
           <Form onSubmit={handleRegister}>
-            <Form.Group controlId="formUsername">
-              <Form.Label>Username</Form.Label>
+            <Form.Group controlId="formEmail">
+              <Form.Label>Email</Form.Label>
               <Form.Control
                 type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Enter your username"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
                 required
               />
             </Form.Group>
@@ -55,8 +53,8 @@ const Register = () => {
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={passwordHash}
+                onChange={(e) => setPasswordHash(e.target.value)}
                 placeholder="Enter your password"
                 required
               />

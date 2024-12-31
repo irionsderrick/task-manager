@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|c:\\swe projects\\task manager\\dotnet\\task manager api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|c:\\swe projects\\task manager\\dotnet\\task manager api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|c:\\swe projects\\task manager\\dotnet\\task manager api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|c:\\swe projects\\task manager\\dotnet\\task manager api\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFA8EBC8-E57C-4F3B-8DBD-7544C1DB20B7}|Task Manager API\\Task Manager API.csproj|solutionrelative:task manager api\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,15 +47,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Task Manager API\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Task Manager API\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T05:29:06.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Models\\Task.cs",
               "RelativeDocumentMoniker": "Task Manager API\\Models\\Task.cs",
               "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Models\\Task.cs",
               "RelativeToolTip": "Task Manager API\\Models\\Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:45:29.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T04:00:02.518Z"
             },
             {
               "$type": "Document",
@@ -53,10 +77,34 @@
               "RelativeDocumentMoniker": "Task Manager API\\Controllers\\TasksController.cs",
               "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Controllers\\TasksController.cs",
               "RelativeToolTip": "Task Manager API\\Controllers\\TasksController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T02:48:45.173Z",
+              "WhenOpened": "2024-12-16T03:51:03.283Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Task Manager API\\Models\\User.cs",
+              "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Models\\User.cs",
+              "RelativeToolTip": "Task Manager API\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T03:38:25.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Task Manager API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\SWE Projects\\Task Manager\\dotnet\\Task Manager API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Task Manager API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T03:32:15.543Z"
             }
           ]
         }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import fetchTasks from "../services/taskService";
 import taskService from "../services/taskService";
 
 const TaskList = () => {
